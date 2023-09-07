@@ -29,7 +29,7 @@ export default function ListItem({ seats }) {
               <th></th>
               {seatNumbers.map((seatNumber) => {
                 return (
-                  <th className="text-center text-danger" key={seatNumber}>
+                  <th className="text-center text-warning" key={seatNumber}>
                     {seatNumber}
                   </th>
                 );
@@ -40,7 +40,7 @@ export default function ListItem({ seats }) {
             {remain.map((row) => {
               return (
                 <tr key={row.hang}>
-                  <th className="mb-1 text-danger">{row.hang}</th>
+                  <th className="mb-1 text-warning">{row.hang}</th>
                   {row.danhSachGhe.map((seat) => {
                     //tìm ghế đang chọn có trong ds ghế hay không
                     const isSelected = selectedSeats.find(
